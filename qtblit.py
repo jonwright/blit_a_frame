@@ -39,7 +39,7 @@ def run():
          nframes/(t2-start),
          (t1-t0)*1e3,(t2-t1)*1e3,(t3-t2)*1e3))
         if nframes<100:
-            QtCore.QTimer.singleShot( 1000./33, changepic )
+            QtCore.QTimer.singleShot( 1000/24, changepic )
         else:
             sys.exit()
     changepic()
